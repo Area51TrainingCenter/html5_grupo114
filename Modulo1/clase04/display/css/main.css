@@ -1,0 +1,30 @@
+.texto1{
+	background-color: gray;
+	width: 100px;
+}
+.texto2{
+	background-color: red;
+
+}
+.texto3{
+	background-color: blue;
+		width: 140px;
+}
+.texto4{
+	background-color: skyblue;
+}
+
+
+/* inline 
+
+	ocupa solamente su contenido
+	es considerado como un texto
+	no se pueden modificar sus dimensiones
+*/
+ 
+/* block 
+	ocupa todo el ancho de la fila
+	se pueden modificar sus dimensiones solamnete de manera visual
+
+*/
+
