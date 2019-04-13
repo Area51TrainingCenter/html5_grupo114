@@ -1,0 +1,36 @@
+.title{
+	/*
+	color: rgb();
+	color:rgba();
+	color:#fff000;
+	color:blue;
+	color:hsl();
+	color: hsla()
+	*/
+	color: #aaa456;
+}
+
+.parrafo{
+	font-size: 29px;
+	font-family: helvetica;
+	text-decoration:underline;
+
+}
+.precio{
+text-decoration: line-through;}
+.texto-bold{
+	font-weight: bold;
+}
+.contenido{
+	color:black;
+	font-family: arial,helvetica,monospace;
+}
+
+a{
+	text-decoration: none;
+}
+
+.link1{
+	color: red;
+font-weight: bold;
+text-decoration: none;}
