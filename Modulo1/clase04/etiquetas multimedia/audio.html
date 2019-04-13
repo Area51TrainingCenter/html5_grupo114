@@ -5,7 +5,17 @@
 </head>
 <body>
 	<h1>Conociendo la etiqueta audio</h1>
-	<audio src="recursos/sample.mp3" controls></audio>
+	<!-- utilizando un solo recurso -->	
+	<audio src="recursos/sample.mp3" controls loop muted preload autoplay></audio>
+
+	<!--Utilizando distintos recursos para el player-->
+	<audio controls>
+		<source src="recursos/sample.mp3" type="audio/mp3">
+		<source src="recursos/sample.ogg" type="audio/ogg">
+			Tu no es compatible con el componente
+	</audio>
+
+
 
 </body>
 </html>
