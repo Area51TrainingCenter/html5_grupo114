@@ -1,0 +1,90 @@
+*{
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+.container{
+	width: 1020px;
+	margin:0 auto;
+	
+	
+}
+
+.box1{
+width: 980px;
+
+background-color: red;
+margin:20px;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.box1-1{
+width: 100px;
+height: 100px;
+background-color: green;
+float: left;
+margin:20px;
+}
+.box1-2{
+	margin:20px;
+float: right;
+width: 100px;
+height: 100px;
+background-color: yellow;
+}
+.box2{
+	width: 980px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 400px;
+	background-color: pink;
+}
+.box3{
+	width: 100px;
+	height: 400px;
+	background-color: black;
+	float: left;
+	margin:20px;
+	border-radius: 50%;
+
+}
+.box4{
+	margin:20px;
+	float: right;
+	width: 100px;
+	height: 400px;
+	background-color: yellow;
+
+
+}
+
+.box5{
+	
+margin:20px;
+	float: left;
+	width: 100px;
+	height: 400px;
+	background-color: yellow;
+}
+.box6{
+	
+
+	width: 100px;
+	height: 400px;
+	background-color: black;
+	float: right;
+	margin:20px;
+	border-radius: 50%;
+
+
+}
+
+
+.limpiador{clear: both;}

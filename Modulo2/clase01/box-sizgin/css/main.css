@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+.box{
+	width: 800px;
+	background-color: red;
+
+}
+.parrafo1{
+width: 393px;
+display: inline-block;
+vertical-align: top;
+background-color: pink;
+padding-left: 100px;
+
+border:10px solid yellow;
+
+
+}
+.parrafo2{
+	width: 393px;
+display: inline-block;
+vertical-align: top;
+background-color: skyblue;
+border:40px solid green;
+}

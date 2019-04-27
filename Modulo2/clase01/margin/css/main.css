@@ -1,0 +1,64 @@
+.title{
+	background-color:skyblue;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin:40px; /* los 4 lados */
+
+
+	margin-top:10px;
+	margin-left: 30px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+
+	margin:10px 50px;
+	/* margin: top-bottom left-right;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+	margin:10px 30px 50px 5px;
+	/* margin : top right bottom left;*/
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-bottom: 50px;
+	margin-left: 5px;
+
+
+
+}
+/*
+.parrafo{
+	background-color: pink;
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin:40px;
+
+}*/
+
+/** ejemplo caja-margin.html */
+body{
+
+}
+.box{
+	width: 1366px;
+	height: 500px;
+	background-color: skyblue;
+	margin:0 auto;
+
+	
+	/*
+	margin-top:0px;
+	margin-bottom: 0px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	*/
+
+	/*margin:auto;*/
+
+	
+}
+
