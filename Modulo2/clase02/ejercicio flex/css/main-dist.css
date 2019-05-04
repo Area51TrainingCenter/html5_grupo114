@@ -1,4 +1,5 @@
 *{
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 p{
@@ -6,7 +7,10 @@ p{
 	text-transform: uppercase;
 }
 .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 
 }
@@ -14,6 +18,8 @@ p{
 	width: 250px;
 	height: 250px;
 	background-color: gray;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-top: 20px;
 	margin-left: 20px;
@@ -27,50 +33,77 @@ border-radius: 50%;
 }
 
 .dado1{
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
 .dado2{
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 .dado2 .punto2{
+	-ms-flex-item-align: end;
 	align-self: flex-end;
 }
 
 .dado3{
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
 .dado3 .punto1{
+-ms-flex-item-align: start;
 align-self: flex-start;
 }
 
 .dado3 .punto2{
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
 	align-self: center;
 }
 
 .dado3 .punto3{
+	-ms-flex-item-align: end;
 	align-self: flex-end;
 }
 
 
 .dado4
 {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 /*.dado4 .punto2 , .dado4 .punto4 {
 	align-self: flex-end;
 }*/
 .columna{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
+	-webkit-box-orient: vertical;
+
+	-webkit-box-direction: normal;
+
+	-ms-flex-direction: column;
+
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	/*flex-direction: column;
 	justify-content: space-between;*/
 }
 .punto5{
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
 	align-self: center;
 }
 
