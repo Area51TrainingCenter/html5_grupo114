@@ -1,0 +1,64 @@
+.box{
+	width: 500px;
+	height: 700px;
+	background-color: skyblue;
+	display: flex;
+	/* direccion */
+	/*flex-direction: row;*/
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	/* eje principal */
+	justify-content: space-around;
+
+	/* eje secundario */
+	align-items: flex-start;
+display: none;
+
+}
+.box1{
+background-color: red;
+color: white;
+width: 100px;
+height: 100px;
+}
+.box2{
+background-color: blue;
+color: white;
+width: 100px;
+height: 100px;
+}
+
+.box3{
+
+background-color: green;
+color: white;
+width: 100px;
+height: 100px;
+}
+.item1, .item2, .item3{
+	align-self: center;
+}
+.item4, .item5, .item6{
+	align-self: flex-end;
+}
+
+
+.fluido{
+	width: 600px;
+	height: 400px;
+	background-color: pink;
+	display: flex;
+	justify-content: flex-start;
+	align-items:center;
+	justify-content: center;
+
+}
+.fluido1{
+	width: 100px;
+	height: 100px;
+	font-weight: bold;
+	background-color: skyblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
