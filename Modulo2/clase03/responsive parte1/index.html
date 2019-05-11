@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+<div class="container">
+	<div class="box1">
+		<img src="https://img.elcomercio.pe/files/listing_ec_home_principal2x1/uploads/2019/05/11/5cd6f9d60ed36.jpeg">
+	</div>
+	<div class="box2"></div>
+</div>
+</body>
+</html>
+
+
+<style type="text/css">
+*{
+	margin:0;
+	padding: 0;
+}
+.box1{
+	width: 500px;
+	height: 200px;
+	background-color: red;
+	display: inline-block;
+	vertical-align: top;
+  }
+  .box1 img{
+  	width: 500px;
+
+  }
+  .box2{
+	width: 500px;
+	height: 200px;
+	background-color: black;
+	display: inline-block;
+	vertical-align: top;
+}
+
+	.container{
+	
+		width: 1024px;
+		height: 400px;
+		background-color: tomato;
+		margin:0 auto;
+	}
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+
+	.container{
+		background-color: pink;
+		width: 100%;
+
+	}
+	.box1, .box2{
+		width: 90%;
+		margin-bottom: 10px;
+		margin-left: 5%;
+	}
+	  .box1 img{
+	  	width: 100%;
+	  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px){
+
+	.container{
+		background-color: green;
+		width: 100%;
+		
+	}
+
+	.box1, .box2{
+		width: 48%;
+	}
+	  .box1 img{
+	  	width: 100%;
+	  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px){
+
+	.container{
+		background-color: blue;
+		width: 100%;
+	}
+
+	.box1, .box2{
+		width: 48%;
+	}
+	  .box1 img{
+	  	width: 100%;
+	  }
+}
+
+
+
+
+
+
+
+
+
+</style>
