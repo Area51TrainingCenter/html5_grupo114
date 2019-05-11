@@ -1,0 +1,30 @@
+.icono{
+	width:125px;
+	height: 125px;
+	background-image: url("../img/iconos.png");
+	display: inline-block;
+
+}
+
+.ico-instagram{
+
+	background-position: 0px 0px;
+	transition: all 0.2s linear;
+}
+.ico-instagram:hover{
+	background-position: 0px -129px;
+}
+
+.ico-twitter{
+	background-position: -129px 0px;
+}
+.ico-twitter:hover{
+	background-position: -129px -129px;
+}
+.ico-facebook{
+		background-position: -255px 0px;	
+}
+
+.ico-facebook:hover{
+		background-position: -255px -129px;	
+}
