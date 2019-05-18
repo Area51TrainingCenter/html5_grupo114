@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="box1">
+		<img src="https://files.laliga.es/seccion_logos/laliga-v-300x300_2018.png">
+	</div>
+	<div class="box2">
+		<img src="https://files.laliga.es/seccion_logos/laliga-v-300x300_2018.png">
+	</div>
+	<div class="item"></div>
+	<div class="moneda">
+		<img src="https://www.pngfind.com/pngs/m/77-776106_mario-bros-coin-icon-hd-png-download.png">
+	</div>
+</body>
+</html>
+<style type="text/css">
+	 img{
+		width: 100%
+	}
+	.box1
+	{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		transition: all 0.2s linear;
+		transform: rotate(10deg);
+		display: inline-block;
+		vertical-align: top;
+	}
+	.box1:hover{
+		transform: rotate(-10deg);
+	}
+	.box2
+	{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		transition: all 0.4s linear;
+		transform: rotate(-10deg);
+		display: inline-block;
+		vertical-align: top;
+	}
+	.box2:hover{
+		transform: rotateZ(10deg);
+	}
+
+	.item{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		transform: rotateX(0deg);
+		transition: all 0.4s linear;
+	}
+	.item:hover{
+		transform: rotateY(360deg);
+	}
+	.moneda{
+		width: 100px;
+		transition: all 0.8s linear;
+	}
+	.moneda:hover{
+		transform: rotateX(30deg);
+	}
+
+	/*.box1:hover{
+		transform: rotate(-720deg);
+	}*/
+</style>

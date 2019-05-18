@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div class="box"></div>
+<div class="box2"></div>
+<div class="ico-vivo">
+	<span>en vivo</span><div class="vivo"></div>
+</div>
+
+</body>
+</html>
+
+<style type="text/css">
+.ico-vivo{
+	padding: 10px 20px;
+	border:2px solid black;
+	border-radius: 10px;
+	font-family: arial;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-flex;}
+	.box{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	
+		 animation: movimiento2 4s infinite 2s;
+		 /*animation:  movimiento tiempo cantidad de veces , delay;*/
+	}
+	.vivo{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: yellow;
+		margin-left: 20px;
+		animation: vivo 1s infinite;
+
+	}
+	.box2{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	
+		 animation: movimiento2 3s infinite 4s;
+		 /*animation:  movimiento tiempo cantidad de veces, delay;*/
+	}
+	@keyframes movimiento{
+		from{
+			background-color: red;
+		}
+		to{
+			background-color: blue;
+		}
+		
+	}
+	@keyframes movimiento2{
+		0%{background-color: red;}
+		50%{background-color: blue;}
+		100%{background-color: red;}
+	}
+
+	@keyframes vivo{
+		0%{background-color: yellow;}
+		25%{background-color: green;}
+		50%{background-color: red;}
+		75%{background-color: green;}
+		100%{background-color: yellow;}
+	}
+</style>
