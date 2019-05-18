@@ -12,6 +12,12 @@
 			<div class="col2"></div>
 		</div>
 	</section>
+	<section class="section">
+		<div class="left1"></div>
+		<div class="con1">contenido</div>
+		<div class="con2">contenido2</div>
+		<div class="rigth1"></div>
+	</section>
 
 </body>
 </html>
@@ -47,4 +53,33 @@
 		left: -1000%;
 		background-color: yellow;
 	}
+
+	.section{
+		display: flex;
+		background-color: orange;
+	}
+	.con1{
+		width: 324px;
+		height: 400px;
+		background-color: blue;
+		flex-grow:0;
+	}
+	.con2{
+		width: 700px;
+		height: 400px;
+		background-color: green;
+		flex-grow: 0;
+	}
+	.left1{
+		width: 100px;
+		height: 100px;
+		background-color: maroon;
+		flex-grow: 1;
+	}
+	.rigth1{
+width: 100px;
+		height: 100px;
+		background-color: maroon;
+		flex-grow: 1;
+		}
 </style>
