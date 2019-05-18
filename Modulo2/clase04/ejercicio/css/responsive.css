@@ -1,0 +1,106 @@
+	
+@media screen and (min-width:0px ) and (max-width:1200px ){
+	.container{
+		width: 100%;
+	}
+	.header-site
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.intro2{
+
+		text-align: center;}
+
+	.item{
+		width: 30%;
+	
+		margin-left: 1%;
+		margin-right: 1%;
+		
+		}
+		
+
+}
+@media screen and (min-width: 0px) and (max-width: 1000px){
+	.formulario{
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.col1{
+		width: 50%;
+		padding-left: 10px;
+	}
+	.col2{
+		width: 50%;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px){
+	.header-site{
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-site{
+		
+		order: 1;
+	}
+	.title-site{
+		order: 2;
+		margin-top: 30px;
+	}
+	.marcas{
+		flex-wrap: wrap;
+	}
+		.marcas img{
+			margin:20px;
+		}
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 640px){
+	.item{
+		width: 100%;
+	
+			
+		}
+		.item{
+			display: flex;
+			align-items: center;
+		}
+		.box-circle{
+			flex-shrink: 0;
+		}
+		.detail-item{
+			flex-shrink: 1;
+		}
+
+}
+@media screen and (min-width: 0px) and (max-width: 600px){
+	.intro2{
+		font-size: 30px;
+		text-align: center;}
+		.col1{
+		width: 100%;
+	
+	}
+	.col2{
+		width: 100%;
+		
+	}
+	.texto-team
+		{
+			width: 100%;
+		}
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 450px){
+	
+		.item{
+			display: block;
+		}
+		
+}

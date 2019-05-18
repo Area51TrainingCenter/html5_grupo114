@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 class="title-site">Title</h1>
+	<div class="box">
+
+	<p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, </p>
+	</div>
+
+	<ul class="lista">
+		<li><img class="icono" src="https://cdn1.iconfinder.com/data/icons/ui-colored-3-of-3/100/UI_3_-20-512.png">Item</li>
+		<li><img class="icono" src="https://cdn1.iconfinder.com/data/icons/ui-colored-3-of-3/100/UI_3_-20-512.png">Item</li>
+		<li><img class="icono" src="https://cdn1.iconfinder.com/data/icons/ui-colored-3-of-3/100/UI_3_-20-512.png">Item</li>
+		<li><img class="icono" src="https://cdn1.iconfinder.com/data/icons/ui-colored-3-of-3/100/UI_3_-20-512.png">Item</li>
+	</ul>
+	<ul class="lista">
+		<li>
+			<span class="icono2"></span>
+			Item2
+		</li>
+	</ul>
+	<ul class="lista3">
+		<li>Item2</li>
+		<li>Item3</li>
+		<li>Item4</li>
+	</ul>
+</body>
+</html>
+
+<style type="text/css">
+*{
+	box-sizing: border-box;
+}
+	.title-site:before{
+		content: "Texto insertado por CSS: ";
+
+	}
+	.title-site:after{
+		content: ". (punto final)";
+	}
+	.box{
+		width: 200px;
+		height:80px;
+		border-radius: 10px;
+		background-color: skyblue;
+		position: relative;
+		
+	}
+	.box:before{
+		content: "";
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		border:20px solid transparent;
+		border-top:20px solid skyblue;
+		box-sizing: border-box;
+		position: absolute;
+		bottom: -40px;
+		left: 40px;
+	}
+
+	.lista{
+		margin-top: 30px;
+		list-style: none;
+	}
+	.icono{
+		width: 20px;
+		height: 20px;
+	}
+	.icono2{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-size: cover;
+		background-image: url("https://cdn1.iconfinder.com/data/icons/ui-colored-3-of-3/100/UI_3_-20-512.png");
+	}
+	.lista3{
+		list-style: none;
+	}
+	.lista3 li:before{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-image: url("https://cdn1.iconfinder.com/data/icons/ui-colored-3-of-3/100/UI_3_-20-512.png");
+		background-size: cover;
+	}
+</style>
