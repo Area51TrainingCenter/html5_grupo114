@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	.contenido{
+		width: 970px;
+		margin:0 auto;
+		display: flex;
+	}
+	.item-small{
+		width: 100%;
+		height: 170px;
+		background-color: black;
+
+
+	/*	background-size: cover;
+			background-position: center;*/
+	}
+		.item-small img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+	@media (max-width: 970px)
+	{
+		.contenido{
+			width: 100%;
+			flex-direction: column;
+		}
+		.contenido article img{
+			width: 100%;
+			
+		}
+			.item-small{
+				width: 100%;
+				height: auto;
+			}
+	}
+</style>
+</head>
+<body>
+
+<div class="contenido">
+	<div>
+		<article>
+			<img src="https://blogs.elcolombiano.com/hablemosdefertilidad/wp-content/uploads/2017/05/ovarios-ovulos-fertilidad-infertilidad-embarazo-problemas-especialistas-ayuda-660x400.jpg">
+		</article>
+	</div>
+	<div>
+		<article class="item-small" >
+				<img src="https://blogs.elcolombiano.com/hablemosdefertilidad/wp-content/uploads/2017/05/ovarios-ovulos-fertilidad-infertilidad-embarazo-problemas-especialistas-ayuda-660x400.jpg">
+		</article>
+		<!--<article class="item-small">
+			<img src="foto.png">
+		</article>-->
+	</div>
+</div>
+</body>
+</html>
