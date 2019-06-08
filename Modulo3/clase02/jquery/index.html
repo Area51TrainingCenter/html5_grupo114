@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+		.blue{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+
+
+<h1 id="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor </h1>
+<span class="cambiarColor">Cambiar</span>
+<!-- link desde internet -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- link a mi archivo -->
+<!--
+	<script type="text/javascript" src="js/jquery.js"></script>
+-->
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	/*$(".cambiarColor").click(tarea)
+
+	function tarea(){
+		$("#title").addClass("red");
+	}
+	*/
+
+
+	$(".cambiarColor").click(function (){
+		// codigo a ejecutar
+		$("#title").addClass("red");
+
+	})
+	
+		$(".cambiarColor").click(function(valor1,valor2){
+			// ambito de funcion
+		} ) 
+		/*
+		function(valor1,valor2){
+
+		}
+
+		()=>{
+
+		}*/
+
+
+
+</script>
