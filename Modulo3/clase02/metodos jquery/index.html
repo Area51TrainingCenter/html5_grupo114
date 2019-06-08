@@ -26,23 +26,38 @@ ul{
 		.content1{
 			width: 400px;
 			height: 300px;
-			background-color: pink;
+			background-color: green;
 			margin:20px auto;
-			display: none;
+			display:none ;
+			position: absolute;
+			left: 0px;
+			top: 0;
 		}
 		.content2{
 			width: 400px;
 			height: 300px;
 			background-color: red;
 			margin:20px auto;
-			display: none;
+				display:none ;
+			position: absolute;
+			left: 0px;
+			top: 0;
 		}
 		.content3{
 			width: 400px;
 			height: 300px;
 			background-color: blue;
 			margin:20px auto;
-			display: none;
+				display:none ;
+			position: absolute;
+			left: 0px;
+			top: 0;
+		}
+		.contenedora{
+			width: 400px;
+			background-color: black;
+			margin:0 auto;
+			position: relative;
 		}
 	</style>
 </head>
@@ -54,20 +69,67 @@ ul{
 			<li id="ele2">Contenido2</li>
 			<li id="ele3">Contenido3</li>
 		</ul>
-		<div class="content1"></div>
-		<div class="content2"></div>
-		<div class="content3"></div>
+		<div class="contenedora">
+			<div class="content1">
+				<h1>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h1>
+			</div>
+		<div class="content2">
+			
+				<h1>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h1>
+
+
+		</div>
+		<div class="content3">
+			
+				<h1>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h1>
+		</div>	
+		</div>
+		
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script type="text/javascript">
-	
+
+
+
 	$("#ele1").click(tarea1)
 
 	function tarea1(){
-		$(".content1").show();
+		ocultar();
+		$(".content1").fadeIn();
+		//$(".content1").show(); // .hide()
+		/*$(".content2").hide(); // .hide()
+		$(".content3").hide(); // .hide()
+*/
+		/*$(".content2").fadeOut(); // .hide()
+		$(".content3").fadeOut(); // .hide()*/
+	
 	}
+	$("#ele2").click(function (){
+		ocultar();
+		$(".content2").fadeIn(); // .hide()
+		//$(".content1").fadeOut(); // .hide()
+		//$(".content3").fadeOut();
+		/*$(".content2").show(); // .hide()
+		$(".content1").hide(); // .hide()
+		$(".content3").hide(); // .hide()*/
+		
 
+	})
+
+	$("#ele3").click(function (){
+		ocultar();
+		$(".content3").fadeIn(); // .hide()
+		/*$(".content1").fadeOut();
+		$(".content2").fadeOut();*/
+	})
+
+	
+	function ocultar(){
+		$(".content1").fadeOut(); // .hide()
+		$(".content3").fadeOut();
+		$(".content2").fadeOut();
+	}
 	/*
 	$("#ele1").click(function() {
 		$(".content1").show();	
