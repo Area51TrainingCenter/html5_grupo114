@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+.box
+{ width: 300px;
+height: 400px;
+background-color: skyblue; 
+transform: scale(0);
+transition: all 0.4s linear;
+border-radius: 50%;
+
+}
+.mostrar{
+	transform: scale(1);
+	border-radius: 0px;
+}
+</style>
+</head>
+<body>
+
+<span id="mostrar">Mostar</span>
+<div class="box"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$("#mostrar").click(function(){
+		$(".box").addClass("mostrar");
+	})
+</script>
+</body>
+</html>
