@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header-site {
+            background-color: black;
+            width: 100%;
+            max-width: 970px;
+            margin: 0 auto;
+        }
+        
+        .header-site nav {
+            background-color: black;
+            color: white;
+        }
+        
+        .header-site nav ul {
+            list-style: none;
+        }
+        
+        .header-site nav ul li {
+            padding: 20px;
+            display: inline-block;
+        }
+        
+        .icono-menu {
+            margin: 20px;
+            display: inline-block;
+            color: white;
+            display: none;
+            float: right;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .container {
+            width: 970px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 700px) {
+            .header-site nav ul {
+                display: none;
+            }
+            .icono-menu {
+                display: inline-block;
+                background-color: red;
+                text-align: right;
+            }
+            .header-site nav ul li {
+                display: block;
+                margin-bottom: 2px;
+                text-align: right;
+            }
+        }
+        
+        .foto-principal {
+            padding: 40px;
+            position: relative;
+        }
+        
+        .foto-principal img {
+            width: 100%;
+        }
+        
+        .thumb {
+            text-align: center;
+        }
+        
+        .thumb li {
+            width: 200px;
+            margin-left: 30px;
+            margin-right: 30px;
+            display: inline-block;
+            opacity: 0.5;
+            border: 3px solid transparent;
+        }
+        
+        .thumb li.activo {
+            opacity: 1;
+            border: 3px solid red;
+        }
+        
+        .thumb li img {
+            width: 100%;
+            vertical-align: top;
+        }
+        
+        .nav-right {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            font-size: 50px;
+            color: black;
+        }
+        
+        .nav-left {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            font-size: 50px;
+            color: black;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-site">
+            <span class="icono-menu">ICONO MENU</span>
+            <div class="clear"></div>
+            <nav>
+                <ul>
+                    <li class="item1">Item2</li>
+                    <li class="item2">Item2</li>
+                    <li class="item3">Item2</li>
+                    <li class="item4">Item2</li>
+                    <li class="item1">Item2</li>
+                    <li class="item2">Item2</li>
+                    <li class="item3">Item2</li>
+                    <li class="item4">Item2</li>
+                </ul>
+            </nav>
+
+        </header>
+        <section>
+            <div class="foto-principal">
+                <span class="nav-left"><</span>
+
+                <img src="img/foto1.jpg">
+
+                <span class="nav-right">></span>
+            </div>
+
+            <ul class="thumb">
+                <li class="foto1 activo">
+                    <img src="img/foto_1.png" data-posicion="1" data-foto-large="img/foto1.jpg">
+                </li>
+                <li class="foto2"><img src="img/foto2.png" data-posicion="2" data-foto-large="img/foto2.png"></li>
+                <li class="foto3 "><img src="img/foto3.jpg" data-posicion="3" data-foto-large="img/foto3.jpg"></li>
+            </ul>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    /*let estado=false;
+
+    	$(".icono-menu").click(function(){
+    		if(estado==false){
+    			$(".header-site nav ul").slideDown();
+    			estado=true;
+    		}
+    		else{
+    		 // estado verdedero
+    		 	$(".header-site nav ul").slideUp();
+    		 	estado=false;
+    		}
+
+    	})
+    	*/
+
+    $(".icono-menu").click(function() {
+        //$(".header-site nav ul").toggle();
+        $(".header-site nav ul").slideToggle();
+        //$(".elemento").toggleClass("activo");
+    })
+
+    /*
+    $(".foto1").click(function(){
+    	$(".thumb li").removeClass("activo")
+    	$(".foto1").addClass("activo")
+    	$(".foto-principal img").attr("src","img/foto1.jpg") 
+    })
+    $(".foto2").click(function(){
+    	$(".thumb li").removeClass("activo")
+    	$(".foto2").addClass("activo")
+    	//$(".foto-principal img").attr("src"); // obtiene el valor
+    	$(".foto-principal img").attr("src","img/foto2.png") // actualiza el valor del atributo
+    })
+    $(".foto3").click(function(){
+    	$(".thumb li").removeClass("activo")
+    	$(".foto3").addClass("activo")
+    	$(".foto-principal img").attr("src","img/foto3.jpg") 
+    })
+    */
+    /*$(".thumb li").click(function(){
+
+    	$(".thumb li").removeClass("activo");
+    	$(this).addClass("activo");
+    	let ruta=$(this).find("img").attr("src");
+    	$(".foto-principal img").attr("src",ruta); 
+
+    })
+    */
+
+    $(".thumb li img").click(function() {
+
+        $(".thumb li").removeClass("activo");
+        $(this).parent().addClass("activo");
+        //let ruta=$(this).attr("src");
+        let ruta = $(this).attr("data-foto-large");
+        $(".foto-principal img").attr("src", ruta);
+
+    })
+
+    $(".nav-left").click(function() {
+        let elemento = $(".activo").prev()
+        if (elemento.length == 0) {
+            $(".thumb li").removeClass("activo");
+            let elementos = $(".thumb li");
+            let final = elementos.length - 1;
+
+            $(elementos[final]).addClass("activo");
+            let ruta = $(elementos[final]).find("img").attr("data-foto-large")
+            $(".foto-principal img").attr("src", ruta);
+        } else {
+            $(".thumb li").removeClass("activo");
+            $(elemento).addClass("activo");
+            let ruta = $(elemento).find("img").attr("data-foto-large")
+            $(".foto-principal img").attr("src", ruta);
+        }
+    })
+
+    $(".nav-right").click(function() {
+        let elemento = $(".activo").next()
+
+        if (elemento.length == 0) {
+            //alert("no puedes avanzar más") 
+            let elementos = $(".thumb li");
+            $(".thumb li").removeClass("activo");
+            $(elementos[0]).addClass("activo");
+
+            let ruta = $(elementos[0]).find("img").attr("data-foto-large")
+            $(".foto-principal img").attr("src", ruta);
+        } else {
+            $(".thumb li").removeClass("activo");
+            $(elemento).addClass("activo");
+            let ruta = $(elemento).find("img").attr("data-foto-large")
+            $(".foto-principal img").attr("src", ruta);
+        }
+    })
+</script>
