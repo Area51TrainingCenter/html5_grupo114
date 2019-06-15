@@ -1,6 +1,7 @@
 $(document).ready(function(){
 		let opc={
-			items:1
+			items:1,
+			nav:true
 		}
 	  $(".owl-carousel").owlCarousel(opc);
 });
